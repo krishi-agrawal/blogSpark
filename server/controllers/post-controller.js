@@ -13,13 +13,10 @@ export const getAllPosts = async (request, response) => {
     let posts
     let category = request.query.category
     try {
-        console.log(request.query);
         if(category) {
-            console.log(category);
             posts = await Post.find({categories : category})
         }
         else{
-            console.log("ooppss");
             posts = await Post.find({})
         }
         return response.status(200).json(posts)
