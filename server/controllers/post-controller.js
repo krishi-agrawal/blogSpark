@@ -33,3 +33,15 @@ export const getPost = async (request, response) => {
         return response.status(500).json(error)
     }
 }
+export const updatePost = async (request, response) => {
+    try {
+        const post = await Post.findById(request.params.id)
+        if(!post){
+            return response.status(400).json('No post with this id...')
+        }
+        await Post.findByIdAndUpdate(request.params.id, {$set: request.body})
+        response.status(200).json(post)
+    } catch(error) {
+        return response.status(500).json(error)
+    }
+}
