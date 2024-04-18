@@ -45,3 +45,14 @@ export const updatePost = async (request, response) => {
         return response.status(500).json(error)
     }
 }
+export const deletePost = async (request, response) => {
+    try {
+        const post = await Post.findByIdAndDelete(request.params.id)
+        // if(!post){
+        //     return response.status(400).json({msg : "post not found.."})
+        // }
+        return response.status(200).json({msg :'Deleted the post'})
+    } catch(error) {
+        return response.status(500).json(error)
+    }
+}
