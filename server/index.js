@@ -3,8 +3,11 @@ import { Connection } from "./database/db.js"
 import Router from "./routes/route.js"
 import cors from 'cors'
 import bodyParser from "body-parser"
+import dotenv from "dotenv"
 
-const PORT = 8000
+dotenv.config()
+
+const PORT = process.env.PORT || 8000
 
 const app = express()
 
