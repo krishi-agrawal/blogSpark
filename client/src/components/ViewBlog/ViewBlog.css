@@ -1,0 +1,84 @@
+.blog-contents{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+.blog-contents .blog-img{
+    height: 60%;  
+    z-index: -1;
+}
+
+.blog-img > img{
+    object-fit:cover;
+}
+
+.edit-icons{
+    display: flex;
+    justify-content: flex-end;
+    right: 0px;
+    margin-right: 100px;
+}
+
+.edit-icons .edit{
+    color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.edit-icons .delete{
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.blog-contents h2{
+    margin-bottom: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    z-index: -1;
+}
+.blog-contents .grey{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    z-index: -1;
+}
+.blog-contents .blog-username{
+    color: grey;
+}
+.blog-contents .blog-date{
+    color: grey;
+}
+.blog-contents .blog-desc{
+    margin-left: 100px;
+    margin-right: 100px;
+    z-index: -1;
+}
+
+
+@media (max-width: 768px) {
+    .blog-contents {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .edit-icons {
+      margin-right: 20px;
+    }
+  
+    .blog-contents h2,
+    .blog-contents .grey,
+    .blog-contents .blog-desc {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }

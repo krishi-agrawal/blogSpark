@@ -1,0 +1,30 @@
+body {
+    overflow-x: hidden;
+}
+
+.__cat-and-blogs {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blog-list {
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .__cat-and-blogs {
+        flex-direction: column;
+    }
+
+    .category-list {
+        width: 100%;
+    }
+
+    .blog-list {
+        width: 100%;
+        padding: 0 20px;
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,63 @@
+.__single-comment{
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    margin-top: 30px;
+    background: rgb(227, 227, 227); 
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    /* margin-bottom: 5px; */
+}
+
+.__single-comment .user-details{
+    position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    /* background-color: cadetblue; */
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    
+}
+
+.user-details h4{
+    margin: 0;
+    color: cadetblue;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.user-details .date{
+    margin: 0;
+    color: rgb(204, 204, 204);
+}
+
+.delete-icon{
+    position: absolute;
+    right: 10px;
+    size: 20px;
+    cursor: pointer;
+}
+.user-comment{
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .__single-comment .user-details {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .delete-icon {
+      position: relative;
+      right: unset;
+      top: unset;
+      margin-top: 10px;
+      text-align: right;
+    }
+  }

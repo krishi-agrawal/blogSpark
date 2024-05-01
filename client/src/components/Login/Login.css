@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-pic {
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-section {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004AAD;
+}
+
+.wrapper {
+    width: 420px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 30px 40px 30px 40px;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box .login-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.wrapper button {
+    width: 100%;;
+    height: 45px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14.5px;
+}
+
+.register-link p a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    margin: 10px 0;
+}
+
+/* Media query for screens less than 535px */
+@media (max-width: 535px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section {
+        width: 100%;
+        height: auto;
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .right-section {
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .wrapper {
+        width: 90%;
+        max-width: 400px;
+    }
+}
