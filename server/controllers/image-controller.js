@@ -1,4 +1,4 @@
-const url = 'https://blogspark-backend.vercel.app';
+const url = 'https://blogspark-backend.onrender.com';
 import mongoose from "mongoose";
 import grid from "gridfs-stream"
 
