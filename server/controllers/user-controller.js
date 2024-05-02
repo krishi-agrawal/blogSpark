@@ -19,6 +19,7 @@ export const signupUser = async (request, response) => {
 
 export const loginUser = async (request, response) => {
     try {
+        response.setHeader('Access-Control-Allow-Origin', 'https://blogspark-frontend.vercel.app')
         let user = await User.findOne({ username: request.body.username })
         if (!user) {
             return response.status(400).json({ msg: "Username does not match" })
