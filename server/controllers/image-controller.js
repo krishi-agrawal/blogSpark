@@ -1,4 +1,4 @@
-const url = '';
+const url = 'http://localhost:8000';
 import mongoose from "mongoose";
 import grid from "gridfs-stream"
 
