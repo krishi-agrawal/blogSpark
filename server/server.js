@@ -11,7 +11,9 @@ const PORT = process.env.PORT || 8000
 
 const app = express()
 
-app.use(cors())
+app.use(cors({
+    origin: "https://blogspark-frontend.vercel.app"
+}))
 app.use(bodyParser.json({ extended: true }))
 app.use(bodyParser.urlencoded({ extended: false }))
 
