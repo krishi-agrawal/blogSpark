@@ -2,7 +2,7 @@ import axios from "axios"
 import { API_NOTIFICATION_MSGS, SERVICE_URLS } from "../constants/config.js"
 import { getAccessTokens, getType } from "../utils/common-utils.js"
 
-const API_URL = "http://localhost:8000"
+const API_URL = "https://blogspark-backend.vercel.app"
 const axiosInstance = axios.create({
     baseURL: API_URL,
     timeout: 10000,
