@@ -1,9 +1,9 @@
 <h1 align="center">Blogspark</h1>
-<a href="https://blogspark-frontend.vercel.app/login">Live Website</a>
 <h3>An interactive blogging webiste made with Node.js. and React.js</h3>
 <p> Engineered a dynamic and responsive MERN stack blogging website with JWT authentication. Enabled effortless
 posting, editing, and deleting of blogs, and an engaging UI design for optimal user experience.
 </p>
+<a href="https://blogspark-frontend.vercel.app/login">Live Website</a> <i>(the login process might take a few moments)</i>
 </br>
 <h2>Preview of the website</h2>
 <ul>
